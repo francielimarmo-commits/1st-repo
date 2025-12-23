@@ -3,3 +3,11 @@ services:
     build: .
     ports:
       - "8000:8000"
+    environment:
+      APP_NAME: "Fran's Penguin App"
+      APP_VERSION: "0.3.0"
+      IMAGE_FILE: "pinguim.jpeg"
+      FLASK_ENV: "development"
+      FLASK_DEBUG: "1"
+    volumes:
+      - ./app:/app
